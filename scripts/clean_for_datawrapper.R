@@ -25,7 +25,7 @@ top_companies_number_trades <- trades_enriched %>%
   group_by(canonical_company) %>% 
   summarise(count = n()) %>% 
   arrange(desc(count)) %>% 
-  head(26)
+  head(15)
 
 write.csv(top_companies_number_trades, "output/top_companies_number_trades.csv", row.names = FALSE)
 
