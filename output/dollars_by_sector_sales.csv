@@ -1,13 +1,13 @@
 "gics_sector","sum_low","sum_high"
-"Information Technology",22729314,77860000
+"Technology",24000344,80900000
 "Funds & ETFs",12321017,60740000
-"Communication Services",10866093,44265000
-"Consumer Discretionary",12093155,41795000
-"Financials",9822257,23830000
-"Health Care",6441137,18265000
-"Industrials",5817138,13930000
-"Consumer Staples",2032050,4880000
-"Real Estate",1488062,4020000
-"Utilities",1287030,3005000
-"Materials",938027,2345000
-"Energy",276016,840000
+"Communication Services",10833088,44120000
+"Consumer Cyclical",12241170,42315000
+"Financial Services",9495240,22825000
+"Healthcare",6408139,18245000
+"Industrials",4853119,11695000
+"Consumer Defensive",2148053,5195000
+"Real Estate",1578068,4320000
+"Utilities",1272029,2955000
+"Basic Materials",701015,1690000
+"Energy",260014,775000
