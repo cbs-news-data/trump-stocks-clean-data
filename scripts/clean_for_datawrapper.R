@@ -68,4 +68,25 @@ number_buys_sells_by_sector <- trades_enriched %>%
          Sells = sale)
 
 write.csv(number_buys_sells_by_sector, "output/number_buys_sells_by_sector.csv", row.names = FALSE)
-  
+
+
+stock_daily_close <- read.csv("data/daily_close_all.csv") %>% mutate(date = as.Date(date, format = "%Y-%m-%d"))
+
+NVDA_daily_close <- stock_daily_close %>% 
+  select(date, NVDA) %>% 
+  filter(date >= "2025-12-01",
+         date <= "2026-05-01")
+
+PLTR_daily_close <- stock_daily_close %>% 
+  select(date, PLTR) %>% 
+  filter(date >= "2025-12-01",
+         date <= "2026-05-01")
+
+LLY_daily_close <- stock_daily_close %>% 
+  select(date, LLY) %>% 
+  filter(date >= "2025-12-01",
+         date <= "2026-05-01")
+
+write.csv(NVDA_daily_close, "output/NVDA_daily_close.csv", row.names = FALSE)
+write.csv(PLTR_daily_close, "output/PLTR_daily_close.csv", row.names = FALSE)
+write.csv(LLY_daily_close, "output/LLY_daily_close.csv", row.names = FALSE)
